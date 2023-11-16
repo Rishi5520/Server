@@ -4,11 +4,8 @@ import mongoose from 'mongoose';
 const CategorySchema = mongoose.Schema({
     name:{type:String,required:true,unique:true},
     description:{type:String,required:true},
-    isactive:{type:Boolean,required:true},
-    isActive:{type:Boolean,required:true},
-
-
-
+    isActive:{type:Boolean,required:true, default:false},
+    // isPrimume:{type:Boolean,required:true},
 
 })
 

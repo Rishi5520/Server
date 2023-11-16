@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "engines": {
-    "node" : "14.x"
+    "node": "21.1.0"
   },
   "scripts": {
     "start": "node index.js",
@@ -30,6 +30,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.0.0",
     "morgan": "^1.10.0",
+    "node": "^21.1.0",
     "nodemon": "^3.0.1"
   }
 }

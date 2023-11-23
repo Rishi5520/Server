@@ -48,16 +48,10 @@ export async function fetchDeActiveCategory(request, response) {
 
 export async function deleteCategory(request, response) {
   try {
-    await Category.findOneAndDelete(request.params.name);
-    if (!Category) {
-        // If category is not found
-        response.status(StatusCodes.NOT_FOUND).json({ message: "Category not found" });
-        return;
-      }
-    response.status(StatusCodes.NO_CONTENT).json();
+    await Category.findOneAndDelete({ _id: request.params.id._id });
+    response.status(StatusCodes.NO_CONTENT).json(Category.message);
   } catch (error) {
-    response
-      .status(StatusCodes.INTERNAL_SERVER_ERROR)
-      .json({ message: "Error in deleting Category" });
+    console.error(error);
+    response.status(StatusCodes.INTERNAL_SERVER_ERROR).json(error.message);
   }
 }

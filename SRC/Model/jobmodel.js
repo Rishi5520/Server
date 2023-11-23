@@ -13,7 +13,7 @@ const JobSchema = mongoose.Schema({
         ref: 'Category',
         required: true
     },
-    // Currency:{
+    //  :{
     //     type:Schema.Types.ObjectId,
     //     ref: 'Currency',
     //     required: true

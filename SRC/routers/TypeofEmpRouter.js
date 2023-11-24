@@ -7,6 +7,6 @@ TypeEmpRouter.post('/Employee',SaveTypeofEmployee)
 TypeEmpRouter.get('/Employee/all',FetchSaveTypeofEmployee)
 TypeEmpRouter.get('/Employee/active',FetchAllactiveSaveTypeofEmployee)
 TypeEmpRouter.get('/Employee/Deactive',FetchAllDeactiveSaveTypeofEmployee)
-TypeEmpRouter.delete('/Employee/  ',DeleteTypeofEmp)
+TypeEmpRouter.delete('/Employee/Delate:id',DeleteTypeofEmp)
 
 export default TypeEmpRouter;

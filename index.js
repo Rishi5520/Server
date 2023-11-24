@@ -7,6 +7,9 @@ import CategoryRouter from './SRC/routers/CategoryRouter.js';
 import PostJobRouter from './SRC/routers/PostJobRouter.js';
 import TypeEmpRouter from './SRC/routers/TypeofEmpRouter.js';
 import SalaryRouter from './SRC/routers/SalaryRangeRouter.js';
+import CompanySizeRouter from './SRC/routers/CompanySizeRouter.js';
+import IndustryRouter from './SRC/routers/IndustryRouter.js';
+import JoblevelRouter from './SRC/routers/JoblevelRouter.js';
 
 
 const app = express();
@@ -23,6 +26,9 @@ app.use(CategoryRouter);
 app.use(PostJobRouter);
 app.use(TypeEmpRouter);
 app.use(SalaryRouter);
+app.use(CompanySizeRouter);
+app.use(IndustryRouter);
+app.use(JoblevelRouter)
 app.listen(process.env.PORT,()=>{
     console.log(`server listening on port ${process.env.PORT}`);
     DbConnect();

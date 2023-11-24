@@ -5,5 +5,5 @@ const IndustrySchema = mongoose.Schema({
   isActive:{type:Boolean,required:true}
 },{timestamps:true});
 
-const Industrymodel = mongoose.model('Industry',JoblevelsSchema);
+const Industrymodel = mongoose.model('Industry',IndustrySchema);
 export default Industrymodel;

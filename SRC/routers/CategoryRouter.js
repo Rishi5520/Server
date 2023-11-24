@@ -7,6 +7,6 @@ CategoryRouter.post('/category', SaveCategory);
 CategoryRouter.get('/category/all', FeatchAll);
 CategoryRouter.get('/category/active', FeatchAllActiveCategory);
 CategoryRouter.get('/category/Deactive', fetchDeActiveCategory);
-CategoryRouter.delete('/category/:name',deleteCategory);
+CategoryRouter.delete('/category/Delete:id',deleteCategory);
 
 export default CategoryRouter;

@@ -14,13 +14,12 @@ import JoblevelRouter from './SRC/routers/JoblevelRouter.js';
 
 const app = express();
 
-//middleware
-// checkAuthorized();
+// middleware
 
-
+app.use(express.json());
 // app.use(morgan("dev"));
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.json());
+
 app.use(UserRouter);
 app.use(CategoryRouter);
 app.use(PostJobRouter);

@@ -13,11 +13,31 @@ const JobSchema = mongoose.Schema({
         ref: 'Category',
         required: true
     },
-    //  :{
-    //     type:Schema.Types.ObjectId,
-    //     ref: 'Currency',
-    //     required: true
-    // }, 
+    CompanySize:{
+        type: mongoose.Schema.Types.String,
+        ref:'Company',
+        required:true
+    },
+    JobLevel:{
+        type: mongoose.Schema.Types.String,
+        ref:'JobLevel',
+        required:true
+    },
+    TypeofEmployee:{
+        type:mongoose.Schema.Types.String,
+        ref:"Types",
+        required:true
+    },
+    SalaryRange:{
+        type: mongoose.Schema.Types.String,
+        ref:"SalaryRange",
+        required:true
+    },
+    Industry:{
+        type: mongoose.Schema.Types.String,
+        ref:"Industry",
+        required:true
+    },
     title: {
         type: String,
         required: true
@@ -33,12 +53,6 @@ const JobSchema = mongoose.Schema({
     duration: {
         type: String,
         required: true
-    },
-    salaryForm: {
-        type: String,required:true
-    },
-    salaryTo:{
-        type:String,required:true
     },
     description: {
         type: String, required:true

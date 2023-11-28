@@ -5,7 +5,7 @@ const IndustryRouter = express.Router()
 
 
 IndustryRouter.post('/Industry',SaveIndustry)
-IndustryRouter.post('/Industry',FeatchAllIndustry)
+IndustryRouter.post('/Industry/all',FeatchAllIndustry)
 IndustryRouter.get('/Industry/active',FeatchAllActiveIndustry)
 IndustryRouter.get('/Industry/Deactive',FeatchAllDeactiveIndustry)
 IndustryRouter.delete('/Industry/Delete:id',deleteIndustry)
